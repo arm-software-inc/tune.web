@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Radio } from './models/radio';
-import { RadioService } from './radio.service';
+import { RadioService } from './services/radio.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { RadioService } from './radio.service';
 })
 export class AppComponent implements OnInit {
   radios: Radio[] = [];
-  selectedStation: string = '';
+  selectedStation: Radio | undefined;
 
   constructor(private radioService: RadioService) {}
 
@@ -22,6 +22,6 @@ export class AppComponent implements OnInit {
   }
 
   selectStation(radio: Radio): void {
-    this.selectedStation = radio.url_resolved;
+    this.selectedStation = radio;
   }
 }
