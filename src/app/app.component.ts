@@ -9,7 +9,7 @@ import { RadioService } from './radio.service';
 })
 export class AppComponent implements OnInit {
   radios: Radio[] = [];
-  selectedStation: Radio | undefined;
+  selectedStation: string = '';
 
   constructor(private radioService: RadioService) {}
 
@@ -22,6 +22,6 @@ export class AppComponent implements OnInit {
   }
 
   selectStation(radio: Radio): void {
-    this.selectedStation = radio;
+    this.selectedStation = radio.url_resolved;
   }
 }
