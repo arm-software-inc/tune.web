@@ -1,0 +1,11 @@
+<div class="container">
+    <h1> TuneRadio </h1>
+    <div class="stations">
+        <div class="card" *ngFor="let radio of radios" (click)="selectStation(radio)">
+            <strong> {{ radio.name }} </strong>
+        </div>
+    </div>
+
+    <app-player [selectedStation]="selectedStation"></app-player>
+</div>
+
