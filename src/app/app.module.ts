@@ -9,7 +9,7 @@ import { PlayerComponent } from './player/player.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PlayerComponent
+    PlayerComponent,
   ],
   imports: [
     BrowserModule,
