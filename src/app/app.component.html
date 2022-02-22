@@ -2,8 +2,7 @@
     <app-header></app-header>
     <div class="stations">
         <div class="card" *ngFor="let radio of radios" (click)="selectStation(radio)">
-            <img src="{{ radio.favicon }}" onerror="this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvURrxVdCQ-qh_VmG80K7iMWpsKzuUOrVBA&usqp=CAU'">
-            <strong> {{ radio.name }} </strong>
+            <app-radio [radio]="radio"></app-radio>
         </div>
     </div>
 

@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlayerComponent } from './player/player.component';
 import { HeaderComponent } from './header/header.component';
+import { RadioComponent } from './radio/radio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerComponent,
     HeaderComponent,
+    RadioComponent,
   ],
   imports: [
     BrowserModule,

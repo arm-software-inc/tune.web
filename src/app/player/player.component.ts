@@ -14,12 +14,10 @@ export class PlayerComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.registerAudioEvents();
-  }  
+  }
 
   // when station changes
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.selectedStation);
-
     this.audioPlayer.nativeElement.muted = false;
     this.audioPlayer.nativeElement.src = changes['selectedStation'].currentValue?.url_resolved;
     
@@ -39,7 +37,15 @@ export class PlayerComponent implements OnInit, OnChanges {
     });
   }
 
-  play() {    
+  play(): void {
     this.playing ? this.audioPlayer.nativeElement.pause() : this.audioPlayer.nativeElement.play()
+  }
+
+  previous(): void {
+    console.log('rádio anterior')
+  }
+
+  next(): void {
+    console.log('próxima rádio')
   }
 }

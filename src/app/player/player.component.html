@@ -7,9 +7,9 @@
 
     <strong> {{ selectedStation?.name }} </strong>
     <section class="controls">
-        <button (click)="play()">&#x23ee;</button>
+        <button (click)="previous()">&#x23ee;</button>
         <button (click)="play()" *ngIf="playing">&#x23f8;</button>
         <button (click)="play()" *ngIf="!playing">&#x23F5;</button>
-        <button (click)="play()">&#x23ed;</button>
+        <button (click)="next()">&#x23ed;</button>
     </section>
 </div>
