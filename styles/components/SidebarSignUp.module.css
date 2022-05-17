@@ -1,0 +1,35 @@
+.aside {
+	width: 20vw;
+	height: 100vh;
+	background-color: #1C1C1C;
+}
+
+.aside, .title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title {
+	margin-top: 12rem;
+	width: 100%;
+}
+
+.title h1 {
+	color: #f3f3f3;
+	font-size: 2.5rem;
+}
+
+.title p {
+	margin-top: 1rem;
+	color: #D3D3D3;
+	opacity: 60%;
+}
+
+.title a {
+	margin-top: 1rem;
+	color: #659FD3;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
