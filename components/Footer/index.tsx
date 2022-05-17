@@ -1,11 +1,7 @@
 import styles from '@styles/components/Footer.module.css';
 
 const Footer = () => {
-	return (
-		<footer className={styles.footer}>
-			<p> footer uahsduash dusahdu</p>
-		</footer>
-	);
+	return <footer className={styles.footer}></footer>;
 };
 
 export default Footer;
