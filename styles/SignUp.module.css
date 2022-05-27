@@ -15,7 +15,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 2rem;
+	margin-top: 8rem;
 }
 
 .form h1 {
@@ -51,4 +51,48 @@
 	font-weight: bold;
 	color: #D3D3D3;
 	opacity: 60%;
+}
+
+.wrapperCheckbox {
+	display: flex;
+}
+
+.wrapperCheckbox .checkboxStyle {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.wrapperCheckbox .terms {
+	margin-left: 0.5rem;
+}
+
+.wrapperCheckbox .terms span {
+	color: #659FD3;
+}
+
+.buttonSubmit {
+	width: 12rem;
+	height: 3.5rem;
+	background-color: #659FD3;
+	border-radius: 0.5rem;
+	margin-top: 3rem;
+	border: 0;
+	font-weight: bold;
+	color: #D3D3D3;
+	font-size: 1.3rem;
+}
+
+.borderLine {
+	width: 24rem;
+	border: 1px solid #9B9898;
+	margin-top: 3rem;
+}
+
+.pAccount {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+}
+
+.login {
+	color: #659FD3;
 }

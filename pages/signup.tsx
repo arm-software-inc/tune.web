@@ -1,5 +1,6 @@
 import SidebarSignUp from 'components/SidebarSignUp';
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import styles from '../styles/SignUp.module.css';
 
 const SignUp: NextPage = () => {
@@ -16,6 +17,30 @@ const SignUp: NextPage = () => {
 						<input type="text" placeholder="EMAIL" />
 						<input type="password" placeholder="SENHA" />
 						<input type="password" placeholder="CONFIRMAR SENHA" />
+
+						<div className={styles.wrapperCheckbox}>
+							<input
+								type="checkbox"
+								name="#"
+								id="#"
+								className={styles.checkboxStyle}
+							/>
+							<p className={styles.terms}>
+								Li e concordo com os <span>termos</span> de uso e
+								<span> privacidade</span>.
+							</p>
+						</div>
+
+						<button type="submit" className={styles.buttonSubmit}>
+							Continuar
+						</button>
+						<div className={styles.borderLine}></div>
+						<p className={styles.pAccount}>
+							Já tem uma conta?{' '}
+							<Link href="/login" className={styles.login}>
+								Login 🠒
+							</Link>
+						</p>
 					</form>
 				</div>
 			</section>
